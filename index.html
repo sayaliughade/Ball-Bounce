@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click to Bounce Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('ballbounce.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <button id="resetButton">Reset</button>
+        <div id="bounceCounter">Bounces: 0</div>
+    </div>
+    <script src="bounceBallGame.js"></script>
+</body>
+</html>
